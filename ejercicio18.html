@@ -9,13 +9,19 @@
     <h1>Comparador de Números</h1>
 
     <script>
+        // Ejercicio 18 - TP2
+        // Consigna: Funcion calcularMayor que recibe dos numeros y muestra cual es mayor, o si son iguales.
+        
         // Definimos la función flecha con los dos parámetros requeridos
         const calcularMayor = (numero1, numero2) => {
             if (numero1 > numero2) {
+                // Caso 1: el primer numero es mayor
                 document.write(`<p>El primer número (<strong>${numero1}</strong>) es mayor que el segundo (<strong>${numero2}</strong>).</p>`);
             } else if (numero2 > numero1) {
+                // Caso 2: el segundo numero es mayor
                 document.write(`<p>El segundo número (<strong>${numero2}</strong>) es mayor que el primero (<strong>${numero1}</strong>).</p>`);
             } else {
+                // Caso 3: ambos numeros son iguales
                 document.write(`<p>Ambos números son iguales (<strong>${numero1}</strong>).</p>`);
             }
         };
@@ -29,6 +35,7 @@
             calcularMayor(n1, n2);
         };
 
+        // Se llama a la funcion principal para iniciar el ejercicio
         solicitarDatos();
     </script>
 </body>
