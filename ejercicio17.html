@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 17</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Conteo de la letra 'a' en un texto</h1>");
+        const contarLetraA = (texto) => {
+            let contador = 0;
+            for (let i = 0; i < texto.length; i++) {
+                if (texto[i].toLowerCase() === 'a') {
+                    contador++;
+                }
+            }
+            return contador; 
+        }
+        let texto = prompt("Ingrese un texto:");
+        let resultado = contarLetraA(texto);
+        document.write(`La letra "a" aparece ${resultado} veces en el texto.`);
+    </script>
+</body>
+</html>

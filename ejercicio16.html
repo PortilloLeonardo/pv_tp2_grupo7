@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Sumar Números en un Rango</h1>");
+        const sumarRango = (inicio, fin) => {
+            let suma = 0;
+            for (let i = inicio; i <= fin; i++) {
+                suma += i;
+            }
+            return suma;
+        }
+        let inicio = parseInt(prompt("Ingrese el número de inicio:"));
+        let fin = parseInt(prompt("Ingrese el número de fin:"));
+        if (inicio <= fin) {
+            let resultado = sumarRango(inicio, fin);
+            document.write(`La suma de los números desde ${inicio} hasta ${fin} es: ${resultado}.`);
+        } else {
+            document.write("El número de inicio debe ser menor o igual al número de fin.");
+        }
+    </script>
+</body>
+</html>
