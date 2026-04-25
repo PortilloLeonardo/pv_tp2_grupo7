@@ -9,28 +9,34 @@
     <h1>Elementos del Arreglo</h1>
 
     <script>
-        // 1. Definimos la función flecha que recibe el arreglo
+        // Ejercicio 13 - P2
+        // Consigna: Funcion mostrarArreglo que recibe un array numerico e imprime cada elemento en una linea aparte 
+       
+        // Definimos la función flecha que recibe el arreglo
         const mostrarArreglo = (arreglo) => {
+            // forEach recorre cada elemento del array y lo muestra en un parrafo
             arreglo.forEach(num => {
                 document.write(`<p>Número: ${num}</p>`);
             });
         };
 
-        // 2. Lógica para solicitar datos al usuario
+        // Lógica para solicitar datos al usuario
         const iniciarCarga = () => {
+            // Sr pregunta cuantos numeros se van a ingresar
             const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
-            let numeros = [];
+            let numeros = []; // Array vacio donde se iran guardando los numeros
 
             // Usamos un bucle para pedir los números de forma iterativa
             for (let i = 0; i < cantidad; i++) {
                 let ingreso = Number(prompt(`Ingrese el número ${i + 1} de ${cantidad}:`));
-                numeros.push(ingreso);
+                numeros.push(ingreso); // Se agraga cada numero al array
             }
 
-            // 3. Llamamos a la función pasando el array cargado
+            // Llamamos a la función pasando el array cargado
             mostrarArreglo(numeros);
         };
 
+        // Se llama a la funcion principal para iniciar el ejercicio
         iniciarCarga();
     </script>
 </body>
