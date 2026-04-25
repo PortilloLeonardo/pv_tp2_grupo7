@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Retornar mes</h1>");
+        const retornarMes = (numero) => {
+            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            if (numero >= 1 && numero <= 12) {
+                return meses[numero - 1];
+            } else {
+                return " no valido";
+            }
+        }
+        let numero = parseInt(prompt("Ingrese un número del 1 al 12:"));
+        let resultado = retornarMes(numero);
+        document.write(`Resultado es ${resultado}.`);
+    </script>
+</body>
+</html>
