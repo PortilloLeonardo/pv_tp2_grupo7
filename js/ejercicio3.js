@@ -5,7 +5,11 @@
 const calcularVolumen = (radio) => {
   //Math.PI provee el valor de π
   //Math.pow (radio, 3) eleva el radio a la potencia 3
-  console.log((4 / 3) * Math.PI * Math.pow(radio, 3));
+  // .toFixed(2) redondea el resultado a 2 decimales
+  const volumen = (4 / 3) * Math.PI * Math.pow(radio, 3);
+
+  //Se muestra el resultado con texto descriptivo y ubidad de medio
+  console.log(`El volumen de la esfera con radio ${radio} m es: ${volumen.toFixed(2)} m³`);
 };
 
 //Se llama a la funcion con radio = 4
