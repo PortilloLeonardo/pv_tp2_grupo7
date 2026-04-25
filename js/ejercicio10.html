@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio10</title>
+  </head>
+  <body>
+    <script>
+      const LLamar = () => {
+        const Cantidad = parseInt(
+          prompt("Ingrese la cantidad de numero que desea ingresar: "),
+        );
+        let sumartotal = 0; //Declaramos la variable para acumular la suma
+        const listaNumeros = [];
+        for (let i = 0; i < Cantidad; i++) {
+          const Numeros = parseInt(prompt("Ingrese el numero ${i+1}"));
+          listaNumeros.push(Numeros);
+          sumartotal += Numeros[i];
+        }
+        //  Mostrar resultados
+        document.write(`<p>${listaNumeros.join(" - ")}</p>`);
+
+        // Calcular y mostrar promedio
+        const promedio = sumaTotal / cantidad;
+        document.write(`<p><strong>El promedio es:</strong> ${promedio}</p>`);
+      };
+      LLamar();
+    </script>
+  </body>
+</html>
