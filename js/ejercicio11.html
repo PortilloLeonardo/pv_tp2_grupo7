@@ -6,13 +6,24 @@
 </head>
 <body>
     <script>
+        // Ejercicio 11 - TP2
+        // Consigna: Soliciar km recorridos y litros consumidos
+        // Calcular y mostrar el consumo de combustible por kilometro
+        
         const Calcularconsumo=()=>{
+            // Se solcitan los datos al usuario y se convierten a numero entero 
             const km =parseInt(prompt("ingrese kilometros recorrido"));
             const litros= parseInt(prompt("ingrese los litros consumidos"));
+
+            // Formula: litros dividido kilometros = consumo por km
             const resultado = litros / km;
+
+            // Se muestra el resultado usando template string
             document.write(`El consumo es de ${resultado} litros por kilómetro.`);
 
         }
+
+        // Se llama a la funcion para ejecutarla 
         Calcularconsumo()
     </script>
 </body> 
