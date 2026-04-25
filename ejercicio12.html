@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Programación Visual</title>
+</head>
+<body>
+    <h1>Verificador de Paridad</h1>
+
+    <script>
+        // Definimos la lógica usando una función flecha (arrow function)
+        const verificarParidad = () => {
+            let numero = prompt("Ingrese un número para saber si es par o impar:");
+            
+            // Convertimos a número para asegurar la operación lógica
+            numero = Number(numero);
+
+            if (numero % 2 === 0) {
+                document.write(`<p>El número <strong>${numero}</strong> es par.</p>`);
+            } else {
+                document.write(`<p>El número <strong>${numero}</strong> es impar.</p>`);
+            }
+        };
+
+        // Ejecutamos la función
+        verificarParidad();
+    </script>
+</body>
+</html>

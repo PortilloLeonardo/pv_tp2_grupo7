@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18 - Programación Visual</title>
+</head>
+<body>
+    <h1>Comparador de Números</h1>
+
+    <script>
+        // Definimos la función flecha con los dos parámetros requeridos
+        const calcularMayor = (numero1, numero2) => {
+            if (numero1 > numero2) {
+                document.write(`<p>El primer número (<strong>${numero1}</strong>) es mayor que el segundo (<strong>${numero2}</strong>).</p>`);
+            } else if (numero2 > numero1) {
+                document.write(`<p>El segundo número (<strong>${numero2}</strong>) es mayor que el primero (<strong>${numero1}</strong>).</p>`);
+            } else {
+                document.write(`<p>Ambos números son iguales (<strong>${numero1}</strong>).</p>`);
+            }
+        };
+
+        // Lógica para solicitar los ingresos al usuario
+        const solicitarDatos = () => {
+            let n1 = Number(prompt("Ingrese el primer número:"));
+            let n2 = Number(prompt("Ingrese el segundo número:"));
+
+            // Llamamos a la función con los valores capturados
+            calcularMayor(n1, n2);
+        };
+
+        solicitarDatos();
+    </script>
+</body>
+</html>

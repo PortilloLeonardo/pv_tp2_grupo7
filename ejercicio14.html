@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14 - Programación Visual</title>
+</head>
+<body>
+    <h1>Arreglo Original vs Duplicado</h1>
+
+    <script>
+        // Función flecha que retorna un nuevo arreglo con los valores x2
+        const duplicar = (arreglo) => {
+            return arreglo.map(num => num * 2);
+        };
+
+        const ejecutarEjercicio = () => {
+            const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
+            let original = [];
+
+            for (let i = 0; i < cantidad; i++) {
+                let valor = Number(prompt(`Ingrese el número ${i + 1}:`));
+                original.push(valor);
+            }
+
+            // Obtenemos el nuevo arreglo usando la función
+            const duplicados = duplicar(original);
+
+            // Mostramos ambos resultados usando Template Strings
+            document.write(`<p>Valores originales: ${original.join(", ")}</p>`);
+            document.write(`<p><strong>Valores duplicados: ${duplicados.join(", ")}</strong></p>`);
+        };
+
+        ejecutarEjercicio();
+    </script>
+</body>
+</html>
