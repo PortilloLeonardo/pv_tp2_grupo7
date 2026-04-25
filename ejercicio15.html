@@ -7,17 +7,34 @@
 </head>
 <body>
     <script>
+        // Ejercicio 15 - TP2
+        // Consigna: Funcion retornarMes que recibe un numero entero y devuelve
+        //el nombre del mes correspondiente, o un mensaje de error si no es valido.
+        
         document.write("<h1>Retornar mes</h1>");
+        
+        // Funcion flecha que recibe un numero y reorna el mes correspondiente
         const retornarMes = (numero) => {
-            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            // Array con los 12 meses (indica 0 = Enero, indice 11 = Diciembre)
+            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
+                           "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+          
+            // Se verifica que el numero este en el rango valido (1 al 12)
             if (numero >= 1 && numero <= 12) {
-                return meses[numero - 1];
+                return meses[numero - 1]; // Se resa 1 porque el array empieza en indice 0
             } else {
-                return " no valido";
+                // Mensaje corregido: sin espacio adelante y con tilde
+                return "Numero no valido.";
             }
-        }
+        };
+
+        // Se solicia el numero al usuario y se convierte a entero
         let numero = parseInt(prompt("Ingrese un número del 1 al 12:"));
+
+        // Se llama a la funcion y se guarda el resultado
         let resultado = retornarMes(numero);
+
+        // Se muestra el resultado por pantalla
         document.write(`Resultado es ${resultado}.`);
     </script>
 </body>
