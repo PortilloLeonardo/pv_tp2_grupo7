@@ -2,7 +2,7 @@
 // Consigna: Declarar una arrey de 10 y realizar distintas operaciones sobre el.
 
 // Nombre corregidos a camelCase: procesarNotas
-const Procesonotas = () => {
+const procesarNotas = () => {
   // Array con 10 nota enteras
   const notas = [1, 4, 10, 5, 7, 9, 3, 6, 8, 2];
   
@@ -46,4 +46,4 @@ const Procesonotas = () => {
 };
 
 // Se llama a la funcion principal
-Procesonotas();
+procesarNotas();
