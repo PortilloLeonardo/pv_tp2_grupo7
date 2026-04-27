@@ -3,12 +3,12 @@
  
 const convertirSegundos = (hora, minutos) => {
   // Primero se muestran los valores originales ingresados
-  console.log(`Horas: ${horas}, Minutos: ${minutos}`);
+  console.log(`Horas: ${hora}, Minutos: ${minutos}`);
  
   // Formula de conversion:
   // 1 hora = 3600 segundos (60 min * 60 seg)
   // 1 minuto = 60 segundos
-  const segundos = (horas * 3600) + (minutos * 60)
+  const segundos = (hora * 3600) + (minutos * 60)
 
   // Se muestra el total de segundos por consola 
   console.log(`Equivale a ${segundos} segundos.`);
