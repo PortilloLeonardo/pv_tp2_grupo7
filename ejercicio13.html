@@ -1,43 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 13 - Programación Visual</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Elementos del Arreglo</h1>
 
     <script>
-        // Ejercicio 13 - P2
-        // Consigna: Funcion mostrarArreglo que recibe un array numerico e imprime cada elemento en una linea aparte 
-       
-        // Definimos la función flecha que recibe el arreglo
-        const mostrarArreglo = (arreglo) => {
-            // forEach recorre cada elemento del array y lo muestra en un parrafo
-            arreglo.forEach(num => {
-                document.write(`<p>Número: ${num}</p>`);
-            });
-        };
+      // Ejercicio 13 - P2
+      // Consigna: Funcion mostrarArreglo que recibe un array numerico e imprime cada elemento en una linea aparte
 
-        // Lógica para solicitar datos al usuario
-        const iniciarCarga = () => {
-            // Sr pregunta cuantos numeros se van a ingresar
-            const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
-            let numeros = []; // Array vacio donde se iran guardando los numeros
+      // Definimos la función flecha que recibe el arreglo
+      const mostrarArreglo = (arreglo) => {
+        // forEach recorre cada elemento del array y lo muestra en un parrafo
+        arreglo.forEach((num) => {
+          document.write(`<p>Número: ${num}</p>`);
+        });
+      };
 
-            // Usamos un bucle para pedir los números de forma iterativa
-            for (let i = 0; i < cantidad; i++) {
-                let ingreso = Number(prompt(`Ingrese el número ${i + 1} de ${cantidad}:`));
-                numeros.push(ingreso); // Se agraga cada numero al array
-            }
+      // Lógica para solicitar datos al usuario
+      const iniciarCarga = () => {
+        // Sr pregunta cuantos numeros se van a ingresar
+        const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
+        let numeros = []; // Array vacio donde se iran guardando los numeros
 
-            // Llamamos a la función pasando el array cargado
-            mostrarArreglo(numeros);
-        };
+        // Usamos un bucle para pedir los números de forma iterativa
+        for (let i = 0; i < cantidad; i++) {
+          let ingreso = Number(prompt(`Ingrese el número ${i + 1} de ${cantidad}:`));
+          numeros.push(ingreso); // Se agraga cada numero al array
+        }
 
-        // Se llama a la funcion principal para iniciar el ejercicio
-        iniciarCarga();
+        // Llamamos a la función pasando el array cargado
+        mostrarArreglo(numeros);
+      };
+
+      // Se llama a la funcion principal para iniciar el ejercicio
+      iniciarCarga();
     </script>
-</body>
+  </body>
 </html>

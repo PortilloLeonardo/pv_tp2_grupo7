@@ -33,4 +33,3 @@ Este repositorio contiene la resolución del Trabajo Práctico N° 2 de la cáte
 - HTML5
 - CSS3
 - Git / GitHub
-  que ondaaa?
