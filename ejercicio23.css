@@ -1,4 +1,4 @@
-
+/* estilo del marco que contiene el campo de entrada y el resultado */
 .marco {
     border: 2px solid #000;
     padding: 20px;
@@ -6,6 +6,7 @@
     border-radius: 10px;
 }
 
+/* estilo del campo de entrada */
 input {
     padding: 10px;
     font-size: 16px;
@@ -14,12 +15,14 @@ input {
     border-radius: 10px;
 }
 
+/* estilo del área de resultado */
 #resultado {
     padding: 20px;
     border-radius: 10px;
     border: 1px solid black;
     width: 320px;
 }
+/* estilo para el resultado cuando el texto ingresado */
 .cambiarColor {
     background-color: red;
     color: white;
