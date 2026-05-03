@@ -1,0 +1,26 @@
+
+.marco {
+    border: 2px solid #000;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#resultado {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 320px;
+}
+.cambiarColor {
+    background-color: red;
+    color: white;
+}
