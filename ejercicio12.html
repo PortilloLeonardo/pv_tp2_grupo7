@@ -9,6 +9,9 @@
     <h1>Verificador de Paridad</h1>
 
     <script>
+        // Ejercicio 12 -TP2
+        // Consigna: Solicitar un numero y mostrar si es par o impar usando if/else
+        
         // Definimos la lógica usando una función flecha (arrow function)
         const verificarParidad = () => {
             let numero = prompt("Ingrese un número para saber si es par o impar:");
@@ -16,6 +19,8 @@
             // Convertimos a número para asegurar la operación lógica
             numero = Number(numero);
 
+            // El operador % (modulo) devuelve el resto de la division
+            // Si el resto al dividir por 2 es 0, el numero es par
             if (numero % 2 === 0) {
                 document.write(`<p>El número <strong>${numero}</strong> es par.</p>`);
             } else {

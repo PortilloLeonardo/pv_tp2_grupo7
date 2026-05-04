@@ -7,18 +7,31 @@
 </head>
 <body>
     <script>
+        // Ejercicio 17 - TP2
+        // Consigna: Funcion contarLetraA que recibe un string y retorna cuantas veces aparece
+        //la letra "a" (mayuscula o minuscula)
         document.write("<h1>Conteo de la letra 'a' en un texto</h1>");
+
+        // Funcion flecha que recorre el texto caracter por caracter
         const contarLetraA = (texto) => {
-            let contador = 0;
+            let contador = 0; // Acumulador que cuenta cada aparicion de la letra "a"
+            
             for (let i = 0; i < texto.length; i++) {
+                // .toLowerCase() convierte el caracter a minuscula asi se cuentan tanto "a" como "A"
                 if (texto[i].toLowerCase() === 'a') {
                     contador++;
                 }
             }
-            return contador; 
+            return contador; // Se retorna el total de apariciones encontradas
         }
+        
+        // Se solicita el texto al usuario
         let texto = prompt("Ingrese un texto:");
+
+        // Se llama  la funcion y se guarda el resultado
         let resultado = contarLetraA(texto);
+
+        // Se muestra cuantas veces aparecio la letra "a"
         document.write(`La letra "a" aparece ${resultado} veces en el texto.`);
     </script>
 </body>

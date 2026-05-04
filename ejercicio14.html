@@ -9,18 +9,24 @@
     <h1>Arreglo Original vs Duplicado</h1>
 
     <script>
+        // Ejercicio 14 - TP2
+        // Consigna: Funcion duplicar que recibe un array y retorna
+        //un nuevo array con cada valor multiplicado por 2.
+        
         // Función flecha que retorna un nuevo arreglo con los valores x2
         const duplicar = (arreglo) => {
             return arreglo.map(num => num * 2);
         };
 
         const ejecutarEjercicio = () => {
+            // Se solicita la cantidad de numeros a ingresar
             const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
-            let original = [];
+            let original = []; // Array que almacenara los valores originales
 
+            // Bucle para cargar los numeros de forma ierativa
             for (let i = 0; i < cantidad; i++) {
                 let valor = Number(prompt(`Ingrese el número ${i + 1}:`));
-                original.push(valor);
+                original.push(valor); // Se agrega cada numero al array original
             }
 
             // Obtenemos el nuevo arreglo usando la función
@@ -31,6 +37,7 @@
             document.write(`<p><strong>Valores duplicados: ${duplicados.join(", ")}</strong></p>`);
         };
 
+        // Se llama a la funcion principal para iniciar el ejercicio 
         ejecutarEjercicio();
     </script>
 </body>

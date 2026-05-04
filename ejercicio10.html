@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" >
+    <title>Ejercicio10</title>
+ </head>
+  <body>
+    <script>
+      // Ejercicio 10 - TP2
+      // Consigna: Solicitar cantidad de numeros, pedirian deforma iterativa,
+      //guardarlos en un array y mostrar los numeros ingresados y su promedio.
+      const llamar = () => {
+        // Se pide al usuario cuantos numeros quiere ingresar
+        const Cantidad = parseInt(
+          prompt(`Ingrese la cantidad de numero que desea ingresar: `),
+        );
+        
+        let sumartotal = 0; // Acumulador para sumar todos los numeros ingresados
+        const listaNumeros = []; // Array donde se guardaran los numeros
+
+        // Bucle que se repite tantas veces como la cantidad indicada 
+        for (let i = 0; i < Cantidad; i++) {
+          // Backticks para que ${i+1} se evalua correcamente en el template string
+          const Numeros = parseInt(prompt(`Ingrese el numero ${i+1}`));
+          listaNumeros.push(Numeros); // Se agrega el numero al array
+          sumartotal += Numeros; // Se acumula para calcular el promedio
+        }
+        
+        // Se muestra todos los numeros ingresados separados por " - "
+        document.write(`<p>${listaNumeros.join(" - ")}</p>`);
+
+        // Se calcula y muestra el promedio dividiendo la suma por la cantidad
+        const promedio = sumartotal / Cantidad;
+        document.write(`<p><strong>El promedio es:</strong> ${promedio}</p>`);
+      };
+
+      // Se llama a la funcion para ejecuarla
+      llamar();
+    </script>
+  </body>
+</html>
