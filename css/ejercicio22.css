@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.contenedor-texto {
+  border: 2px dashed #007bff;
+  padding: 15px;
+  min-width: 300px;
+  min-height: 50px;
+  text-align: center;
+}
