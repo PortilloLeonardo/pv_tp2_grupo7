@@ -1,0 +1,46 @@
+body {
+  font-family: "candara";
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  background-color: #b4b4b4;
+}
+
+.card-radio {
+  background: #e9e5e5;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  width: 100%;
+  min-width: 30rem;
+  max-width: 30rem;
+}
+
+.opciones-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin: 2rem;
+  padding-left: 1rem;
+}
+
+label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#resultado-contenedor {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-top: 0.2rem solid #272727;
+}
+
+#resultado {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
